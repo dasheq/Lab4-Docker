@@ -1,2 +1,2 @@
-# Lab4-Docker
-Dockering for Cloud Computing
+# docker-lab4
+Lab4 DockerFile Starter

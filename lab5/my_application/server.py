@@ -8,12 +8,12 @@ def index():
 @app.route("/hello")
 def hello():
 	return "Hello World!"
-@app.route("/user/paul")
-def user():
-	return "User paul"
-@app.route("/post/80")
-def post():
-	return "Post 80"
+@app.route("/user/<username>")
+def user(username):
+	return "User %s" %username
+@app.route("/post/<int:post_id>")
+def post(post_id):
+	return "Post %d" %post_id
 
 
 if __name__ == "__main__":
